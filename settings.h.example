@@ -1,6 +1,8 @@
 
-#define OPEN_PIN D5
 #define OPEN_HOLD_MS 1000
 
-const char *ssid = "Free Candy";
-const char *password = "RichardStallman";
+#define HOSTNAME_ESP "ESP_DOOR_OPENER"
+#define WIFI_MODE WIFI_STA
+
+const char *ssid = "ssid_of_your_wifi_network";
+const char *password = "your_mothers_maiden_name";
