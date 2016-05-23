@@ -42,12 +42,16 @@ void setup() {
   display.init();
   display.clear();
   display.display();
-  display.setFont(ArialMT_Plain_10);
+  display.setFont(ArialMT_Plain_16);
   display.setTextAlignment(TEXT_ALIGN_CENTER);
   display.setContrast(255);
     
   Serial.println();
-  Serial.print("Configuring access point...");
+  Serial.print("Configuring wifi client...");
+  display.clear();
+  display.drawString(64, 5, "Connecting to:");
+  display.drawString(64, 25, ssid);  
+  display.display();
 
 
   WiFi.hostname(HOSTNAME_ESP);
@@ -70,9 +74,11 @@ void setup() {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
+
   display.clear();
-  display.drawString(64, 10, "Client running");
-  display.drawString(64, 20, WiFi.localIP().toString());  
+  display.drawString(64, 5, "Connected to:");
+  display.drawString(64, 25, WiFi.SSID());  
+  display.drawString(64, 45, "http://" + WiFi.localIP().toString());  
   display.display();
     
 
