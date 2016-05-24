@@ -77,8 +77,10 @@ void setup() {
 
   display.clear();
   display.drawString(64, 5, "Connected to:");
-  display.drawString(64, 25, WiFi.SSID());  
-  display.drawString(64, 45, "http://" + WiFi.localIP().toString());  
+  display.drawString(64, 25, WiFi.SSID()); 
+  display.setFont(ArialMT_Plain_10); 
+  display.drawString(64, 45, "http://" + WiFi.localIP().toString()); 
+  display.setFont(ArialMT_Plain_16); 
   display.display();
     
 

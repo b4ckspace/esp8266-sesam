@@ -10983,7 +10983,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="45.72"/>
-<instance part="DC/DC" gate="G$1" x="-10.16" y="68.58"/>
+<instance part="DC/DC" gate="G$1" x="-12.7" y="53.34"/>
 <instance part="RELAYS_CON" gate="-1" x="170.18" y="78.74"/>
 <instance part="RELAYS_CON" gate="-2" x="170.18" y="76.2"/>
 <instance part="RELAYS_CON" gate="-3" x="170.18" y="73.66"/>
@@ -10995,17 +10995,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="RELAIS_3" gate="G$1" x="139.7" y="88.9"/>
 <instance part="SERIAL" gate="G$1" x="12.7" y="27.94"/>
 <instance part="OLED" gate="1" x="200.66" y="50.8" rot="R180"/>
-<instance part="POWER" gate="-1" x="-38.1" y="71.12"/>
-<instance part="POWER" gate="-2" x="-38.1" y="66.04"/>
+<instance part="POWER" gate="-1" x="-40.64" y="55.88"/>
+<instance part="POWER" gate="-2" x="-40.64" y="50.8"/>
 <instance part="GPIO" gate="-1" x="175.26" y="30.48"/>
 <instance part="GPIO" gate="-2" x="175.26" y="27.94"/>
 <instance part="GPIO" gate="-3" x="175.26" y="25.4"/>
 <instance part="GPIO" gate="-4" x="175.26" y="22.86"/>
 <instance part="GPIO" gate="-5" x="175.26" y="20.32"/>
 <instance part="GPIO" gate="-6" x="175.26" y="17.78"/>
-<instance part="C1" gate="G$1" x="10.16" y="71.12"/>
-<instance part="C2" gate="G$1" x="40.64" y="71.12"/>
-<instance part="VREG1" gate="G$1" x="25.4" y="73.66"/>
+<instance part="C1" gate="G$1" x="7.62" y="55.88"/>
+<instance part="C2" gate="G$1" x="38.1" y="55.88"/>
+<instance part="VREG1" gate="G$1" x="22.86" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -11014,28 +11014,29 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="POWER" gate="-2" pin="KL"/>
 <pinref part="DC/DC" gate="G$1" pin="IN-"/>
-<wire x1="-33.02" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="66.04" x2="-27.94" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="50.8" x2="-30.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="50.8" x2="-30.48" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DC/DC" gate="G$1" pin="OUT-"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="63.5" x2="10.16" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<junction x="10.16" y="63.5"/>
+<wire x1="5.08" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<junction x="7.62" y="48.26"/>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="25.4" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="63.5" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
-<junction x="25.4" y="63.5"/>
-<wire x1="40.64" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="63.5" x2="63.5" y2="7.62" width="0.1524" layer="91"/>
-<junction x="40.64" y="63.5"/>
+<wire x1="22.86" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="48.26" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
+<junction x="22.86" y="48.26"/>
+<wire x1="38.1" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="48.26" x2="63.5" y2="7.62" width="0.1524" layer="91"/>
+<junction x="38.1" y="48.26"/>
 <wire x1="63.5" y1="7.62" x2="127" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="127" y1="7.62" x2="127" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="127" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="VREG1" gate="G$1" pin="GND"/>
+<label x="50.8" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RELAIS_3" gate="G$1" pin="9"/>
@@ -11088,25 +11089,25 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <segment>
 <pinref part="POWER" gate="-1" pin="KL"/>
 <pinref part="DC/DC" gate="G$1" pin="IN+"/>
-<wire x1="-33.02" y1="71.12" x2="-27.94" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="71.12" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="55.88" x2="-30.48" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="55.88" x2="-30.48" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="POWER" class="0">
 <segment>
 <pinref part="DC/DC" gate="G$1" pin="OUT+"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<junction x="10.16" y="73.66"/>
+<wire x1="5.08" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<junction x="7.62" y="58.42"/>
 <pinref part="VREG1" gate="G$1" pin="IN"/>
 </segment>
 </net>
 <net name="3V3" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="40.64" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="58.42" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="68.58" y1="48.26" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
@@ -11114,9 +11115,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="83.82" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <junction x="68.58" y="48.26"/>
 <label x="76.2" y="48.26" size="1.778" layer="95"/>
-<wire x1="40.64" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
-<junction x="40.64" y="73.66"/>
+<wire x1="38.1" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<junction x="38.1" y="58.42"/>
 <pinref part="VREG1" gate="G$1" pin="OUT"/>
+<label x="50.8" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="GPIO" gate="-5" pin="S"/>
