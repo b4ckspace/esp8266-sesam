@@ -6,7 +6,7 @@ A project by [schinken](https://github.com/schinken "schinkens Github") and [xoq
 
 # Hardware
 
-Our hardware works with a ESP-08 or ESP-12e modul. It uses nice little DIL relays, becaus we can direct control them with TTL-signals. What I think is very nice for a relay. 
+Our hardware works with a ESP-07 or ESP-12e modul. It uses nice little DIL relays, becaus we can direct control them with TTL-signals. What I think is very nice for a relay. 
 
 # Webinterface
   TODO
